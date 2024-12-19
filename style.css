@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=BIZ+UDPMincho&family=Gothic+A1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+div,
+h1,
+body,
+p {
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-bottom: 1px solid #000000;
+}
+nav h1 {
+  font-family: Abyssinica SIL;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-family: BIZ UDPMincho;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+header h1 {
+  font-family: BIZ UDPMincho;
+  font-size: 120px;
+  font-weight: 400;
+  line-height: 120px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 48px;
+}
+header {
+  padding: 96px 48px;
+}
+.projects {
+  padding: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+.projects img {
+  margin-bottom: 8px;
+}
+.projects h1 {
+  font-family: Gothic A1;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.projects p {
+  font-family: Gothic A1;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.paragraph {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 48px;
+  gap: 48px;
+}
+.paragraph p {
+  font-family: Gothic A1;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  text-align: left;
+}
+.lpara p {
+  font-family: BIZ UDPMincho;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+.lpara {
+  padding: 96px 270px;
+}
+.para1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 48px;
+  gap: 48px;
+}
+.para1 p {
+  font-family: Gothic A1;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+.para1 h1 {
+  font-family: BIZ UDPMincho;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+footer {
+  padding-top: 144px;
+  padding-bottom: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+footer h1 {
+  font-family: BIZ UDPMincho;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+footer button {
+  font-family: Roboto Mono;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 12px 24px;
+}
+
+@media (max-width: 950px) {
+  nav {
+    flex-direction: column;
+    align-items: start;
+  }
+  nav div {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .lpara {
+    padding: 96px 180px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .lpara {
+    padding: 96px 50px;
+  }
+  .lpara p {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .paragraph {
+    display: block;
+  }
+  .para1 p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  footer h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  footer button {
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
